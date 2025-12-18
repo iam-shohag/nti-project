@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product of NTI</title>
+        <link rel="stylesheet" href="nti-style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+
+    </head>
+    <body>
+    
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo.jpeg" width="125px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Product</a></li>
+                        <li><a href="">About us</li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="images/cart.png" width="30px" height="30px">
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+
+         
+<!-----------cart items details----------->
+<div class="small-container cart-page">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/1.jpeg">
+                    <div>
+                        <p>35 D Closer (Havey)</p>
+                        <small>BDT: 100</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>BDT: 100.00</td>
+        </tr>
+         <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/2.jpeg">
+                    <div>
+                        <p>35 D Closer (Standard Series)</p>
+                        <small>BDT: 50</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>BDT: 100.00</td>
+        </tr>
+         <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/3.jpeg">
+                    <div>
+                        <p>35 D Closer (Small)</p>
+                        <small>BDT: 130</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>BDT: 100.00</td>
+        </tr>
+    </table>
+    <div class="tota-price">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>BDT: 200</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>BDT: 30</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>BDT: 200</td>
+            </tr>
+        </table>
+    </div>
+</div>    
+ 
+ 
+
+ 
+<!--------footer---------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <img src="images/logo.jpeg">
+                    <p>Our purpose is to sustainably make the pleaser and benefits of sports accessible to the many.</p>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Contact Us In Head Office</h3>
+                    <p>Office: 2,<br>Mirpur Road, 6/B, Sultana Tower,<br> Kalabagan, Dhaka-1205,<br>Cell: +88 01713-018621</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Contact Us In Branch Office</h3>
+                    <p>Office: 2,<br>Mirpur Road, 6/B, Sultana Tower,<br> Kalabagan, Dhaka-1205,</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright"> Copyright 2025 This website </p>
+    </div>
+</div>
+<!-------js for toggle menu------>
+  <script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px"
+            }
+        else
+            {
+                MenuItems.style.maxHeight = "0px"
+            }
+    }
+         
+  </script>
+</body>
+</html>
