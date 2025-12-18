@@ -320,7 +320,7 @@ input:focus{
     cursor: pointer;
 
 }
-/*-----media query for mrnu--------*/
+/*-----media query for menu--------*/
 @media only screen and (max-width: 800px){
     nav ul{
         position: absolute;
